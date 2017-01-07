@@ -43,6 +43,8 @@ module DeviseSecurityExtension
               end
             end
           end
+        rescue
+          Rails.logger.error(puts "handle_password_change #{e}")
         end
 
         # lookup if extra (paranoid) code verification is needed
