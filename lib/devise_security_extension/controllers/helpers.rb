@@ -43,7 +43,7 @@ module DeviseSecurityExtension
               end
             end
           end
-        rescue
+        rescue => e
           Rails.logger.error(puts "handle_password_change #{e}")
         end
 
