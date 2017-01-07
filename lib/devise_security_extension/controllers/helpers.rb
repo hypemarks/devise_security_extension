@@ -60,6 +60,8 @@ module DeviseSecurityExtension
               end
             end
           end
+        rescue => e
+          Rails.logger.error(puts "handle_paranoid_verification #{e}")
         end
 
         # redirect for password update with alert message
